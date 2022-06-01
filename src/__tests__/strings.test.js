@@ -38,7 +38,7 @@ describe('lowercase', () => {
 });
 
 describe('countCharacters', () => {
-  xit('returns the number of characters in the string', () => {
+  it('returns the number of characters in the string', () => {
     expect(countCharacters('fsfsgsfdg')).toEqual(9);
     expect(countCharacters('fsfsg')).toEqual(5);
     expect(countCharacters('')).toEqual(0);
@@ -46,7 +46,7 @@ describe('countCharacters', () => {
 });
 
 describe('firstCharacter', () => {
-  xit('returns the first character of the string', () => {
+  it('returns the first character of the string', () => {
     expect(firstCharacter('ABC')).toEqual('A');
     expect(firstCharacter('DEF')).toEqual('D');
     expect(firstCharacter('GHI')).toEqual('G');
