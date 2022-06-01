@@ -15,15 +15,23 @@ function none(a, b) {
 };
 
 function one(a, b) {
-  // your code here
+  if(a && b) {
+    return false;
+  } else if(a || b){
+    return true;
+  } else { 
+    return false;}
 };
 
 function truthiness(a) {
-  // your code here
+  if(a) {
+    return true;
+  } else { 
+    return false;};
 };
 
 function isEqual(a, b) {
-  // your code here
+  return a === b;
 };
 
 function isGreaterThan(a, b) {
