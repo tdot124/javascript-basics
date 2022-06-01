@@ -3,11 +3,11 @@ function sayHello (string) {
 };
 
 function uppercase (string) {
-  // your code here
+  return string.toUpperCase();
 };
 
 function lowercase (string) {
-  // your code here
+  return string.toLowerCase();
 };
 
 function countCharacters (string) {
