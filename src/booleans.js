@@ -51,19 +51,23 @@ function isEven(a) {
 };
 
 function isSquare(a) {
-  // your code here
+  return Number.isInteger(Math.sqrt(a));
 };
 
 function startsWith(char, string) {
-  // your code here
+  return string.charAt(0) === char;
 };
 
 function containsVowels(string) {
-  // your code here
+  let vowels = /[ieoua]/gi;
+  let result = string.match(vowels);
+  return result !== null;
 };
 
 function isLowerCase(string) {
-  // your code here
+  let lowercase = /[A-Z]/g;
+  let result = string.match(lowercase);
+  return result === null;
 };
 
 module.exports = {
