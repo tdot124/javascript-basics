@@ -44,15 +44,20 @@ const uppercaseWordsInArray = strings => {
 };
 
 const reverseWordsInArray = strings => {
-  // your code here
+  const reverseString = (str) => str.split("").reverse().join("");
+  const result = strings.map(reverseString)
+  return result;
 };
 
 const onlyEven = numbers => {
-  // your code here
+  const result = numbers.filter(num => (num % 2) === 0);
+  return result;
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  const arrayCopy = array.map((x) => x);
+  arrayCopy.splice(index,1);
+  return arrayCopy;
 };
 
 const elementsStartingWithAVowel = strings => {
