@@ -26,15 +26,21 @@ const addToArray2 = (element, array) => {
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+  array.splice(index,1);
 };
 
 const numbersToStrings = numbers => {
-  // your code here
+  const strings = numbers.map(num => {
+    return String(num)
+  });
+  return strings;
 };
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+  const upper = strings.map(str => {
+    return str.toUpperCase()
+  });
+  return upper;
 };
 
 const reverseWordsInArray = strings => {
