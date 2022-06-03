@@ -1,5 +1,5 @@
 const getNthElement = (index, array) => {
-  if (index > 3) {
+  if (index > (array.length -1)) {
   return array[index % array.length];
   } else {
     return array[index];
@@ -12,15 +12,17 @@ const arrayToCSVString = array => {
 };
 
 const csvStringToArray = string => {
-  // your code here
+  return string.split(",");
 };
 
 const addToArray = (element, array) => {
-  // your code here
+  array.push(element);
 };
 
 const addToArray2 = (element, array) => {
-  // your code here
+  let newArray = [element];
+  let merge = array.concat(newArray);
+  return merge;  
 };
 
 const removeNthElement = (index, array) => {
