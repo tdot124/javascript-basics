@@ -7,8 +7,9 @@ const getNthElement = (index, array) => {
 };
 
 const arrayToCSVString = array => {
-  const output = array.reduce((acc,value) => acc + "," + value);
-  return output;
+  return array.join(",");
+  /*const output = array.reduce((acc,value) => acc + "," + value);
+  return output;*/
 };
 
 const csvStringToArray = string => {
