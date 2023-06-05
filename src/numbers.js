@@ -1,46 +1,46 @@
-function add (a, b) {
-      return a + b;
-  }
+const add = (a, b) => {
+  return a + b;
+};
 
-function subtract (a, b) {
+const subtract = (a, b) => {
   return a - b;
-}
+};
 
-function multiply (a, b) {
+const multiply = (a, b) => {
   return a * b;
-}
+};
 
-function divide (a, b) {
+const divide = (a, b) => {
   return a / b;
-}
+};
 
-function power (a, b) {
+const power = (a, b) => {
   return a ** b;
-}
+};
 
-function round (a) {
+const round = a => {
   return Math.round(a);
-}
+};
 
-function roundUp (a) {
+const roundUp = a => {
   return Math.ceil(a);
-}
+};
 
-function roundDown (a) {
+const roundDown = a => {
   return Math.floor(a);
-}
+};
 
-function absolute (a) {
+const absolute = a => {
   return Math.abs(a);
-}
+};
 
-function quotient (a, b) {
-  return Math.trunc(a/b);
-}
+const quotient = (a, b) => {
+  return Math.trunc(a / b);
+};
 
-function remainder (a, b) {
+const remainder = (a, b) => {
   return a % b;
-}
+};
 
 module.exports = {
   add,
@@ -54,4 +54,4 @@ module.exports = {
   absolute,
   quotient,
   remainder
-}
+};
